@@ -1,0 +1,25 @@
+<app-poke-header></app-poke-header>
+
+<main>
+  <ng-template [ngIf]="isLoading">
+    <section class="pokemon__names">
+      <h1 class=""> {{pokemon[0].name}} </h1>
+      <h2 class="">{{pokemon[1].names[0].name}}</h2>
+    </section>
+
+
+
+    <section class="pokemon__status">
+      <img
+        [src]="pokemon[0].sprites.other.dream_world.front_default"
+        [alt]="pokemon[0].name"
+        class=""
+      >
+    </section>
+  </ng-template>
+  <a [routerLink]="['']" class="btn btn__secondary" >
+    voltar
+  </a>
+
+  <img src="" alt="">
+</main>
